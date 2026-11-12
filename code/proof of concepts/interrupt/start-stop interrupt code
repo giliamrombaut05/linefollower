@@ -1,0 +1,38 @@
+const int knop = 21;
+
+volatile bool run = false;
+
+void IRAM_ATTR knopISR()
+{
+  run = !run;
+}
+
+void setup()
+{
+  pinMode(knop, INPUT_PULLUP);
+
+  attachInterrupt(
+    digitalPinToInterrupt(knop),
+    knopISR,
+    FALLING
+  );
+
+  Serial.begin(115200);
+
+  Serial.println("Robot ingeschakeld");
+  Serial.println("Status = STOP");
+}
+
+void loop()
+{
+  if (run)
+  {
+    Serial.println("RUN");
+  }
+  else
+  {
+    Serial.println("STOP");
+  }
+
+  delay(1000);
+}
