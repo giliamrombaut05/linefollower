@@ -10,8 +10,8 @@ Repository voor ons linefollower-robotproject. Deze repository bevat de elektris
 ## Specifications
 
 * **Microcontroller:** ESP32-S3 SuperMini (3,3 V logica, dual-core Xtensa LX7, ingebouwde WiFi)
-* **Motors:** 2x N20 DC-motor met reductie (5 V, 500 RPM)
-* **H-bridge:** DRV8833 dubbele H-brug motordriver-module
+* **Motors:** 2x N20 DC-motor met reductie (500 RPM)
+* **H-bridge:** DRV8833 H-brug motordriver-module
 * **Sensors:** QTR-8A (8-kanaals analoge IR-reflectiesensor array)
 * **Batteries:** 2x 18650 Li-ion cel met 3,3 V DC-DC step-down (buck) converter
 * **Wireless communication:** WiFi 
