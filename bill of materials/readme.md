@@ -3,7 +3,7 @@
 
 |volgnummer|naam|omschrijving|nieuw/recup|kostprijs/stuk|aantal|subtotaal|
 |----------|----|------------|-----------|---------|------|---------|
-|         1|  ESP32-C3 SuperMini  |  Microcontroller          | Nieuw          |     €4,5         |   1   |  €4,5       |
+|         1|  ESP32-S3 SuperMini  |  Microcontroller          | Nieuw          |     €4,5         |   1   |  €4,5       |
 |         2|  QTR-8A  |  Reflectiesensorbord          |   Nieuw        |        €1,9      |   1   |     €1,9    |
 |         3|  DRV8833  |  DC-motoraansturing          |      Nieuw     |     €3,0         |   1   |   €3,0      |
 |         4|  N20 6V, ±500 RPM, metal gear  |    DC-motor        |    Nieuw       |   €4,5           |   2   |     €9,0    |
