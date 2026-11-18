@@ -1,7 +1,7 @@
 const int IN1 = 4;
 const int IN2 = 3;
-const int IN3 = 44; "RX"
-const int IN4 = 43; "TX"
+const int IN3 = 44; //RX
+const int IN4 = 43; //TX
 
 void setup() {
   pinMode(IN1, OUTPUT);
