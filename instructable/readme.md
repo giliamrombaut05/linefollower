@@ -117,38 +117,34 @@ Stap 24. Open Arduino IDE, ga naar Bestand, Voorkeuren en voeg bij Additional bo
 Stap 25. Open de Boards Manager en installeer esp32 van Espressif Systems.
 Compileren en uploaden
 
-Stap 26. Kopieer in de map basisprogramma het bestand secrets.h.example naar secrets.h.
+Stap 26. Open basisprogramma.ino in Arduino IDE.
 
-Stap 27. Open secrets.h en vul een eigen wifi-naam en een wachtwoord van minstens 8 tekens in.
-
-Stap 28. Open basisprogramma.ino in Arduino IDE.
-
-Stap 29. Kies bij Tools:
+Stap 27. Kies bij Tools:
 
 • Board: ESP32S3 Dev Module
 • USB CDC On Boot: Enabled
 • Port: de poort van de ESP32
 
-Stap 30. Zet de schakelaar van de robot uit en verbind de ESP32 met de computer via USB-C.
+Stap 28. Zet de schakelaar van de robot uit en verbind de ESP32 met de computer via USB-C.
 
-Stap 31. Verschijnt er geen poort: houd BOOT ingedrukt, druk op RESET en laat beide los.
+Stap 29. Verschijnt er geen poort: houd BOOT ingedrukt, druk op RESET en laat beide los.
 
-Stap 32. Klik op Verify om te compileren.
+Stap 30. Klik op Verify om te compileren.
 
-Stap 33. Klik op Upload.
+Stap 31. Klik op Upload.
 Testen
 
-Stap 34. Open de Serial Monitor op 115200 baud en typ get.
+Stap 32. Open de Serial Monitor op 115200 baud en typ get.
 
-Stap 35. Druk op de start/stop-knop en controleer dat de status wisselt tussen RUN en STOP.
+Stap 33. Druk op de start/stop-knop en controleer dat de status wisselt tussen RUN en STOP.
 
-Stap 36. Verbind je telefoon of computer met het wifi-netwerk van de robot en open 192.168.4.1.
+Stap 34. Verbind je telefoon of computer met het wifi-netwerk van de robot en open 192.168.4.1.
 
-Stap 37. Stel een waarde in via de webpagina, klik op Opslaan, herstart de robot en controleer dat de waarde blijft.
+Stap 35. Stel een waarde in via de webpagina, klik op Opslaan, herstart de robot en controleer dat de waarde blijft.
 
-Stap 38. Upload codeH-brug.ino en controleer dat beide motoren draaien.
+Stap 36. Upload codeH-brug.ino en controleer dat beide motoren draaien.
 
-Stap 39. Upload Sensoren_Uitlezen_POC.ino en controleer in de Serial Monitor dat alle acht sensoren waarden geven.
+Stap 37. Upload Sensoren_Uitlezen_POC.ino en controleer in de Serial Monitor dat alle acht sensoren waarden geven.
 Rijden
 
 Stap 40. Upload de finale code
