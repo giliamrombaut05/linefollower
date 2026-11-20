@@ -101,7 +101,7 @@ Stap 18. Verbind de EEPROM (FM24C256):
 • SDA naar GPIO6.
 • SCL naar GPIO5.
 
-Stap 19. Verbind de start/stop-knop tussen GPIO7 en GND.
+Stap 19. Verbind de start/stop-knop tussen GPI11 en GND.
 
 Stap 20. Verbind de power-led: 3V3, dan weerstand van 220 Ω, dan led, dan GND.
 
@@ -147,8 +147,8 @@ Stap 36. Upload codeH-brug.ino en controleer dat beide motoren draaien.
 Stap 37. Upload Sensoren_Uitlezen_POC.ino en controleer in de Serial Monitor dat alle acht sensoren waarden geven.
 Rijden
 
-Stap 40. Upload de finale code
+Stap 38. Upload de finale code
 .
-Stap 41. Stel Kp, Ki, Kd, snelheid en cyclustijd in via de webpagina of met seriële commando's.
+Stap 39. Stel Kp, Ki, Kd, snelheid en cyclustijd in via de webpagina of met seriële commando's.
 
-Stap 42. Plaats de robot op de lijn, zet de schakelaar aan en druk op de start/stop-knop.
+Stap 40. Plaats de robot op de lijn, zet de schakelaar aan en druk op de start/stop-knop.
