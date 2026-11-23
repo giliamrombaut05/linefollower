@@ -11,7 +11,7 @@
     - draadloze communicatie (eigen wifi-netwerk + webpagina)
 
   Pinnen (conform schema):
-    SDA  = GPIO6     SCL = GPIO5     (EEPROM, adres 0x50: A0..A2 aan GND)
+    SDA  = GPI44 (RX)     SCL = GPI43 (TX)     (EEPROM, adres 0x50: A0..A2 aan GND)
     KNOP = GPIO11    (tussen GPIO11 en GND, INPUT_PULLUP, dalende flank)
 
   Seriele commando's (115200 baud, eindigen met Enter):
