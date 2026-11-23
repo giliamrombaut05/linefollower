@@ -1,5 +1,5 @@
 # draadloze communicatie proof of concept
-Deze proof of concept toont aan dat er draadloos duplex gecommuniceerd kan worden tussen een ESP32-C3 en een smartphone of laptop via een webinterface. Via deze webinterface kunnen instellingen naar de microcontroller gestuurd worden en kunnen de actuele instellingen en status van de robot terug uitgelezen worden.
+Deze proof of concept toont aan dat er draadloos duplex gecommuniceerd kan worden tussen een ESP32-S3 en een smartphone of laptop via een webinterface. Via deze webinterface kunnen instellingen naar de microcontroller gestuurd worden en kunnen de actuele instellingen en status van de robot terug uitgelezen worden.
 <br />
 ### configuratie
 De ESP32-S3 maakt een eigen WiFi-netwerk aan met de naam "LineFollower". Een smartphone of laptop verbindt met dit netwerk en opent de webinterface via het IP-adres 192.168.4.1.
