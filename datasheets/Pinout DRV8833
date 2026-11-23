@@ -1,0 +1,18 @@
+DRV8833 Module Pinout
+Onderstaande afbeelding toont de pinout van de gebruikte DRV8833 motor driver module.
+
+DRV8833 Module Pinout
+
+Pin	Beschrijving
+IN1	Motor ingang 1
+IN2	Motor ingang 2
+IN3	Motor ingang 3
+IN4	Motor ingang 4
+VCC	3V - 10V voedingsspanning
+GND	Ground
+OUT1	Motor uitgang 1
+OUT2	Motor uitgang 2
+OUT3	Motor uitgang 3
+OUT4	Motor uitgang 4
+EEP	Sleep/Enable pin
+ULT	Fault pin (laag bij fouttoestand)
