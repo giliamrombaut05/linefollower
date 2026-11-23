@@ -51,11 +51,11 @@ Stap 15. Verbind de stuursignalen van de DRV8833:
 DRV8833
 ESP32-S3
 IN1
-GPIO4
+GPIO13
 IN2
-GPIO3
+GPIO12
 IN3
-GPIO44 (RX)
+GPIO3
 IN4
 GPIO43 (TX)
 
@@ -78,30 +78,30 @@ S2
 GPIO2
 D3
 S3
-GPIO8
+GPIO5
 D4
 S4
-GPIO9
+GPIO6
 D5
 S5
-GPIO10
+GPI07
 D6
 S6
-GPIO11
+GPIO8
 D7
 S7
-GPIO12
+GPIO9
 D8
 S8
-GPIO13
+GPIO10
 Stap 18. Verbind de EEPROM (FM24C256):
 
 • VCC naar 3V3.
 • GND, WP, A0, A1 en A2 naar GND.
-• SDA naar GPIO6.
-• SCL naar GPIO5.
+• SDA naar GPIO44 (RX).
+• SCL naar GPIO43 (TX).
 
-Stap 19. Verbind de start/stop-knop tussen GPI11 en GND.
+Stap 19. Verbind de start/stop-knop tussen GPIO11 en GND.
 
 Stap 20. Verbind de power-led: 3V3, dan weerstand van 220 Ω, dan led, dan GND.
 
