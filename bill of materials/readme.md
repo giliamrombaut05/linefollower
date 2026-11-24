@@ -17,3 +17,6 @@
 |         12|  Weerstanden |    Weerstanden        |     Recup      |      €0,0        |    1 |    €0,0     |
 |         13|  Wielen |    Wielen        |     Nieuw      |     €1,25         |    2  |     €2,5    |
 |         14| Ball caster |    Ball caster wiel        |     Nieuw      |     €1,25         |  1    |   €1,25      |
+|        15|  Keramische condensator 100 nF  |  Ontkoppeling op ESP32 (3V3) en DRV8833 (VCC)  |  Nieuw (uit set)  |  nvt  |   2   |  nvt  |
+
+**Totaal (rijen 1 t/m 14): €49,90.** De condensatoren komen uit een bestaande set en zijn niet in het totaal opgenomen.
