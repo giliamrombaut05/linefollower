@@ -3,7 +3,7 @@
 Elektronisch schema van de plan B opstelling, getekend in EasyEDA.
 
 * [elektrisch schema line follower.pdf](elektrisch%20schema%20line%20follower.pdf)
-* origineel EasyEDA-bestand: *(nog toe te voegen)*
+* originele EasyEDA-bestanden: [Elektrisch schema line follower.epro2](Elektrisch%20schema%20line%20follower.epro2) en [easyeda_linefollower_planB.json](easyeda_linefollower_planB.json)
 
 ### pintoewijzing ESP32-S3 SuperMini
 
