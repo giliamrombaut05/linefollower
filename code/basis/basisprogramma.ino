@@ -11,14 +11,14 @@
     - draadloze communicatie (eigen wifi-netwerk + webpagina)
 
   Pinnen (conform schema):
-    SDA  = GPI44 (RX)     SCL = GPI43 (TX)     (EEPROM, adres 0x50: A0..A2 aan GND)
+    SDA  = GPIO43 (TX)   SCL = GPIO44 (RX)     (EEPROM, adres 0x50: A0..A2 aan GND)
     KNOP = GPIO11    (tussen GPIO11 en GND, INPUT_PULLUP, dalende flank)
 
   Seriele commando's (115200 baud, eindigen met Enter):
     help                  toon deze lijst
     get                   toon alle parameters en status
     set kp|ki|kd <waarde>
-    set speed <0-255>
+    set power <0-255>     (ook: set speed)
     set cycle <100-100000>   (microseconden)
     debug on|off
     start | stop
@@ -27,7 +27,7 @@
 
   Instellingen bord (Arduino IDE): "ESP32S3 Dev Module", USB CDC On Boot = Enabled.
   PlatformIO: build_flags = -DARDUINO_USB_CDC_ON_BOOT=1
-  Zonder USB CDC gebruikt Serial GPIO43/44 en botst dat met de motorpinnen.
+  Zonder USB CDC gebruikt Serial GPIO43/44 en botst dat met de EEPROM (SDA/SCL).
 
   Wifi: netwerk "LineFollower", webpagina op 192.168.4.1.
 */
@@ -43,8 +43,8 @@
 // ============================
 // Pinnen en constanten
 // ============================
-const uint8_t  PIN_SDA  = 44; //RX
-const uint8_t  PIN_SCL  = 43; //TX
+const uint8_t  PIN_SDA  = 43;   // TX
+const uint8_t  PIN_SCL  = 44;   // RX
 const uint8_t  PIN_KNOP = 11;
 const int      PIN_LED  = -1;      // zet op een vrije GPIO voor een knipperende test-led (-1 = geen)
 
@@ -249,7 +249,7 @@ bool setParam(const String& key, const String& val) {
   if      (key == "kp")    params.kp = clampf(val.toFloat(), 0.0f, 50.0f);
   else if (key == "ki")    params.ki = clampf(val.toFloat(), 0.0f, 50.0f);
   else if (key == "kd")    params.kd = clampf(val.toFloat(), 0.0f, 100.0f);
-  else if (key == "speed") params.maxSpeed = clampl(val.toInt(), 0, 255);
+  else if (key == "speed" || key == "power") params.maxSpeed = clampl(val.toInt(), 0, 255);
   else if (key == "cycle") params.cycleTime = clampl(val.toInt(), 100, 100000);
   else {
     lastMessage = "Onbekende parameter: " + key;
@@ -292,7 +292,7 @@ void printHelp() {
   Serial.println("Commando's:");
   Serial.println("  help | get | start | stop | save | defaults");
   Serial.println("  set kp|ki|kd <waarde>");
-  Serial.println("  set speed <0-255>");
+  Serial.println("  set power <0-255>   (ook: set speed)");
   Serial.println("  set cycle <100-100000>   (us)");
   Serial.println("  debug on|off");
 }
@@ -322,7 +322,7 @@ void executeCommand(String cmd) {
   } else if (name == "set") {
     int sp2 = rest.indexOf(' ');
     if (sp2 < 0) {
-      Serial.println("Gebruik: set <kp|ki|kd|speed|cycle> <waarde>");
+      Serial.println("Gebruik: set <kp|ki|kd|power|cycle> <waarde>");
     } else {
       String key = rest.substring(0, sp2);
       String val = rest.substring(sp2 + 1);
